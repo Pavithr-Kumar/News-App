@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>News App</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <header>
+        <nav>
+           <a href="index.html"> <img src="Assets/Daniel Gallego.png" alt="" id="#logo"></a>
+            <div class="category">
+                <a href="#" class="navlink" id="sports" onclick=onClickNav(id)>Sports</a>
+                <a href="#" class="navlink" id="movies" onclick=onClickNav(id)>Movies</a>
+                <a href="#" class="navlink" id="politics" onclick=onClickNav(id)>Politics</a>
+                <a href="#" class="navlink" id="technology" onclick=onClickNav(id)>Technology</a>
+                <a href="#" class="navlink" id="anime" onclick=onClickNav(id)>Anime</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search News" spellcheck="false" id="search">
+                <button id="sea">Search</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main">
+              <div class="container" id="container">
+                
+                </div>
+                <template id="template-card">
+                    <div class="card">
+                        <div class="card-head">
+                            <img src="https://via.placeholder.com/400x200" alt="" id="news-img">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title" id="title">This is title h1</h3>
+                            <h6 class="source" id="source">End Gadget 26/08/2023</h6>
+                            <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non temporibus cum aliquam suscipit eos nemo praesentium explicabo vitae dignissimos laboriosam! </p>
+                        </div>
+                </template>
+                
+                
+                
+              </div>
+        </div>
+    </main>
+
+
+    <script src="news.js"></script>
+</body>
+</html>

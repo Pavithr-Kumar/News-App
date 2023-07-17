@@ -17,7 +17,7 @@ async function fetchnews(query){
     const templateCard=document.getElementById('template-card');
    
     container.innerHTML="";
-    for(let i=0;i<100;i++)  {
+    for(let i=0;i<articles.length;i++)  {
         if(articles[i].urlToImage==null) {
             continue;
         }

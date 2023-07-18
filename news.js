@@ -1,5 +1,5 @@
-const API_KEY="873609f051fe4dfb82fc804baa953ace";
-const url="https://newsapi.org/v2/everything?q=";
+const API_KEY="d9ab33de7961f2f2a6e6b24c5f6fcc94";
+const url="https://gnews.io/api/v4/search?q=";
 
 window.addEventListener('load',()=>fetchnews("indian government"));
 async function fetchnews(query){
@@ -18,7 +18,7 @@ async function fetchnews(query){
    
     container.innerHTML="";
     for(let i=0;i<articles.length;i++)  {
-        if(articles[i].urlToImage==null) {
+        if(articles[i].image==null) {
             continue;
         }
         
@@ -41,7 +41,7 @@ async function fetchnews(query){
     const newsDesc=cardclone.getElementById('news-desc');
     
 
-    newsImg.src=article.urlToImage;
+    newsImg.src=article.image;
     newsTitle.innerHTML=article.title;
     newsDesc.innerHTML=article.description;
    

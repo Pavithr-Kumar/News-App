@@ -1,4 +1,4 @@
-const API_KEY="208dd7d949494c148ce3cec5fb5ce4e2";
+const API_KEY="873609f051fe4dfb82fc804baa953ace";
 const url="https://newsapi.org/v2/everything?q=";
 
 window.addEventListener('load',()=>fetchnews("indian government"));
